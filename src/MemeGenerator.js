@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import html2canvas from 'html2canvas';
 
 class MemeGenerator extends Component {
+    // Muuttujat, joilla pystytään valitsemaan kuva ja kirjoittamaan kaksi tekstiä
     constructor() {
         super();
         this.state = {
@@ -26,7 +27,8 @@ class MemeGenerator extends Component {
         })
     }
 
-    // Funktio, jolla pystyy tallentamaan kyseisen kuvan mihin olet kirjoittanut tekstiä
+    // Funktio, jolla pystyy tallentamaan kyseisen kuvan mihin olet kirjoittanut tekstiä kuvaan
+    // html2canvas kirjastolla
     async tallenna() {
         const element = document.getElementById('meme'),
         canvas = await html2canvas(element),

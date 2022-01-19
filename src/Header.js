@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./kuvat/pngkey.com-thinking-meme-png-3152007.png"
 
+// Ylätunniste
 function Header() {
     return(
         <header className="container">
