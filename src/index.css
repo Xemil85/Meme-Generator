@@ -5,13 +5,13 @@ html {
 }
 
 body {
+    color: white;
     background: url(/src/kuvat/memebackground.png) no-repeat center center fixed;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    color: white;
     font-family: 'Titillium Web', sans-serif;
     transition: background-color .5s;
 }
@@ -41,6 +41,7 @@ img {
 .memeimg {
     max-width: 100%;
     display: inline-block;
+
 }
 
 .container {
@@ -69,12 +70,20 @@ h1 {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgba(24, 22, 22, 0.856);
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
 }
 
 .top {
     position: absolute;
     text-align: center;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Impact, 'Charcoal', sans-serif;
@@ -89,7 +98,7 @@ h1 {
 
 .bottom {
     position: absolute;
-    bottom: 5%;
+    bottom: -5%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

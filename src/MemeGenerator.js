@@ -48,12 +48,12 @@ class MemeGenerator extends Component {
             <div id="content">
                 <form className="meme-form" onSubmit={this.handleSubmit}>
                     <div id="meme" className='meme'>
-                        <img className="memeimg" width="512" height="512" src={this.state.file}/>
+                        <img alt="laita kuva" className="memeimg" width="512" height="512" src={this.state.file}/>
                         <h2 className='top'>{this.state.topText}</h2>
                         <h2 className='bottom'>{this.state.bottomText}</h2>
                     </div>
                     <br/>
-                    <input type="file" name="photo" accept="image/png, image/jpeg" 
+                    <input type="file" name="photo" accept="image/jpg, image/jpeg" 
                     onChange={this.handleImg} />
                     <br/>
                     <input type="text" name="topText" 
